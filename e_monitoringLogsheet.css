@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'bookman old style';
+}
+
+header {
+    background-color: #162fa0;
+    padding: 10px;
+    text-align: center;
+    height: 20%;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+header h1 {
+    font-size: 32px;
+    color: white;
+    margin-top: 10px;
+}
+
+/* Add a media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+    header img {
+        width: 80px; /* Adjust the size as needed for smaller screens */
+    }
+
+    header h1 {
+        font-size: 24px; /* Adjust the font size for smaller screens */
+    }
+}
+
+/* Table */
+table {
+    width: 95%;
+    margin: 20px auto; /* Center the table horizontally */
+    max-height: 100%;
+    border-collapse: collapse; /* Combine border spacing into one */
+    border: 2px solid black;
+}
+
+/* Individual column widths */
+.fullname {
+    width: 20%;
+}
+
+.sched {
+    width: 8%;
+}
+
+/* Table header */
+th {
+    height: 2px;
+    text-align: center;
+    background-color: #162fa0;
+    color: white;
+    font-family: 'Bookman Old Style', serif;
+    font-size: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 2; /* Ensure the header appears above the table content */
+    border: 2px solid black;
+}
+
+
+/* Table cells */
+td {
+    border: 2px solid black;
+    padding: 4px;
+    font-family: 'Bookman Old Style', serif;
+    font-size: 12px;
+}
+#monitoringTable th {
+    position: sticky;
+    top: 0;
+    background-color: #162fa0;
+    
+}
+.scroll-container {
+    overflow-y: scroll;
+    margin-top: 30px;
+    max-height: 50%; 
+    
+}
+
+/* Remove the scroll from the table */
+
+/* Ensure the table takes 100% width */
+#monitoringTable {
+    width: 95%;
+}
+
+
+.table-rownumber {
+    width: 50px;
+}
+
+.hidden {
+    display: none;
+}
+
+.searchbtn {
+    margin-left: 80%;
+}
+#monitoringTable thead {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+#search {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 80%; /* Adjust the margin as needed */
+    font-size: 12px;
+    width: 200px; /* Adjust the width as needed */
+    
+}

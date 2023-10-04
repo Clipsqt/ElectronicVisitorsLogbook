@@ -1,0 +1,103 @@
+ <input type="checkbox" name="" id="check">
+    <div class="container">
+     <label for="check">
+         <span class="bx bx-x" id="cross"></span>
+         <span class="bx bx-menu" id="bars"></span>
+     </label>
+     <div class="head">MENU</div>
+     <ol>
+     <li> <a href="#"><i class='bx bx-history'></i>E-LOG'S HISTORY</a></li>
+     <li> <a href="#"><i class='bx bxs-notepad'></i></i>ONLINE LOG'S</a></li>
+     <li> <a href="#"><i class='bx bx-walk'></i></i>WALK-IN LOG'S</a></li>
+     </ol>
+ </div>   
+
+
+
+
+
+ 
+.container{
+    top: 20%;
+    height: 80%;
+    width: 250px;
+    position: absolute;
+    background: #3498db;
+    z-index: 2;
+    transition: 0.5 ease;
+    transform: translate(-250px);
+    opacity: 70;
+}
+
+    .container .head{
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+ ol{
+    width: 100%;
+    list-style: none;
+    text-align: left;
+ }
+
+ ol li{
+    display: block;
+    width: 100%;
+    text-align: left;
+ }
+
+ ol li a{
+    color: white;
+    padding: 15px 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    letter-spacing: 1px;
+    position: relative;
+    transition: 0.3s;
+    overflow: hidden;
+    text-transform: capitalize;
+ } 
+
+ ol li a i{
+    width: 45px;
+    font-size: 30px;
+    text-align: center;
+    padding-left: 30px;
+ }
+
+ ol li:hover a{
+    background: black;
+    color: #162fa0;
+    letter-spacing: 5px;
+ }
+
+ input{
+    -webkit-appearance: none;
+    visibility: hidden;
+    display: none;
+ }
+ span{
+    position: absolute;
+    right: -46px;
+    font-size: 28px;
+    border-radius: 3px;
+    color: white;
+    padding: 3px 8px;
+    background: black;
+ }
+
+ #bars{
+    background: #162fa0;
+ }
+ #check:checked ~ .container{
+    transform: translate(0);
+ }
+ #check:checked ~ .container #bars{
+  display: none;
+ }
